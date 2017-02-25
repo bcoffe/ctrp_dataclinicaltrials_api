@@ -1,0 +1,11 @@
+
+{
+  "nci_id": {
+    "AttributeValueList": [
+      {
+        "S": "NCI11111"
+      }
+    ],
+    "ComparisonOperator": "EQ"
+  }
+}

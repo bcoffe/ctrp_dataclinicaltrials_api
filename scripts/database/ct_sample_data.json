@@ -1,0 +1,64 @@
+{
+  "clinical_trials_data": [
+    {
+      "PutRequest": {
+        "Item": {
+          "nci_id": {"S": "NCI11111"},
+          "fda_regulated_drug": {"S": "11111 fda_regulated_drug"},
+          "fda_regulated_device": {"S": "11111 fda_regulated_device"},
+          "post_prior_to_approval": {"S": "11111 post_prior_to_approval"},
+          "ped_postmarket_surv": {"S": "11111 ped_postmarket_surv"},
+          "exported_from_us": {"S": "Yes"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "nci_id": {"S": "NCI22222"},
+          "fda_regulated_drug": {"S": "22222 fda_regulated_drug"},
+          "fda_regulated_device": {"S": "22222 fda_regulated_device"},
+          "post_prior_to_approval": {"S": "22222 post_prior_to_approval"},
+          "ped_postmarket_surv": {"S": "22222 ped_postmarket_surv"},
+          "exported_from_us": {"S": "No"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "nci_id": {"S": "NCI33333"},
+          "fda_regulated_drug": {"S": "33333 fda_regulated_drug"},
+          "fda_regulated_device": {"S": "33333 fda_regulated_device"},
+          "post_prior_to_approval": {"S": "33333 post_prior_to_approval"},
+          "ped_postmarket_surv": {"S": "33333 ped_postmarket_surv"},
+          "exported_from_us": {"S": "Yes"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "nci_id": {"S": "NCI44444"},
+          "fda_regulated_drug": {"S": "44444 fda_regulated_drug"},
+          "fda_regulated_device": {"S": "44444 fda_regulated_device"},
+          "post_prior_to_approval": {"S": "44444 post_prior_to_approval"},
+          "ped_postmarket_surv": {"S": "44444 ped_postmarket_surv"},
+          "exported_from_us": {"S": "Yes"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "nci_id": {"S": "NCI55555"},
+          "fda_regulated_drug": {"S": "55555 fda_regulated_drug"},
+          "fda_regulated_device": {"S": "55555 fda_regulated_device"},
+          "post_prior_to_approval": {"S": "55555 post_prior_to_approval"},
+          "ped_postmarket_surv": {"S": "55555 ped_postmarket_surv"},
+          "exported_from_us": {"S": "Yes"}
+        }
+      }
+    }
+  ]
+}
