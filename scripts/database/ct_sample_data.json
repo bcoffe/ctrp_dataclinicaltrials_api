@@ -8,7 +8,12 @@
           "fda_regulated_device": {"S": "11111 fda_regulated_device"},
           "post_prior_to_approval": {"S": "11111 post_prior_to_approval"},
           "ped_postmarket_surv": {"S": "11111 ped_postmarket_surv"},
-          "exported_from_us": {"S": "Yes"}
+          "exported_from_us": {"S": "Yes"},
+          "sequential_assignment": {"S": "11111 sequential_assignment"},
+          "model_description": {"S": "11111 model_description"},
+          "masking_description": {"S": "11111 masking_description"},
+          "gender_based": {"S": "11111 gender_based"},
+          "gender_description": {"S": "11111 gender_description"}
         }
       }
     },
@@ -20,7 +25,12 @@
           "fda_regulated_device": {"S": "22222 fda_regulated_device"},
           "post_prior_to_approval": {"S": "22222 post_prior_to_approval"},
           "ped_postmarket_surv": {"S": "22222 ped_postmarket_surv"},
-          "exported_from_us": {"S": "No"}
+          "exported_from_us": {"S": "No"},
+          "sequential_assignment": {"S": "22222 sequential_assignment"},
+          "model_description": {"S": "22222 model_description"},
+          "masking_description": {"S": "22222 masking_description"},
+          "gender_based": {"S": "22222 gender_based"},
+          "gender_description": {"S": "22222 gender_description"}
         }
       }
     },
@@ -32,7 +42,12 @@
           "fda_regulated_device": {"S": "33333 fda_regulated_device"},
           "post_prior_to_approval": {"S": "33333 post_prior_to_approval"},
           "ped_postmarket_surv": {"S": "33333 ped_postmarket_surv"},
-          "exported_from_us": {"S": "Yes"}
+          "exported_from_us": {"S": "Yes"},
+          "sequential_assignment": {"S": "33333 sequential_assignment"},
+          "model_description": {"S": "33333 model_description"},
+          "masking_description": {"S": "33333 masking_description"},
+          "gender_based": {"S": "33333 gender_based"},
+          "gender_description": {"S": "33333 gender_description"}
         }
       }
     },
@@ -44,7 +59,12 @@
           "fda_regulated_device": {"S": "44444 fda_regulated_device"},
           "post_prior_to_approval": {"S": "44444 post_prior_to_approval"},
           "ped_postmarket_surv": {"S": "44444 ped_postmarket_surv"},
-          "exported_from_us": {"S": "Yes"}
+          "exported_from_us": {"S": "Yes"},
+          "sequential_assignment": {"S": "44444 sequential_assignment"},
+          "model_description": {"S": "44444 model_description"},
+          "masking_description": {"S": "44444 masking_description"},
+          "gender_based": {"S": "44444 gender_based"},
+          "gender_description": {"S": "44444 gender_description"}
         }
       }
     },
@@ -56,7 +76,12 @@
           "fda_regulated_device": {"S": "55555 fda_regulated_device"},
           "post_prior_to_approval": {"S": "55555 post_prior_to_approval"},
           "ped_postmarket_surv": {"S": "55555 ped_postmarket_surv"},
-          "exported_from_us": {"S": "Yes"}
+          "exported_from_us": {"S": "Yes"},
+          "sequential_assignment": {"S": "55555 sequential_assignment"},
+          "model_description": {"S": "55555 model_description"},
+          "masking_description": {"S": "55555 masking_description"},
+          "gender_based": {"S": "55555 gender_based"},
+          "gender_description": {"S": "55555 gender_description"}
         }
       }
     }
