@@ -1,5 +1,5 @@
 {
-  "clinical_trials_data": [
+  "data_clinical_trial": [
     {
       "PutRequest": {
         "Item": {
@@ -8,7 +8,7 @@
           "fda_regulated_device": {"S": "11111 fda_regulated_device"},
           "post_prior_to_approval": {"S": "11111 post_prior_to_approval"},
           "ped_postmarket_surv": {"S": "11111 ped_postmarket_surv"},
-          "exported_from_us": {"S": "Yes"},
+          "exported_from_us": {"S": "11111 sequential_"},
           "sequential_assignment": {"S": "11111 sequential_assignment"},
           "model_description": {"S": "11111 model_description"},
           "masking_description": {"S": "11111 masking_description"},

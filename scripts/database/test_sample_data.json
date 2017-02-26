@@ -1,0 +1,20 @@
+{
+  "data_test": [
+    {
+      "PutRequest": {
+        "Item": {
+          "id": {"S": "NCI11111"},
+          "name": {"S": "11111 fda_regulated_drug"}
+          }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": {"S": "NCI22222"},
+          "name": {"S": "22222 fda_regulated_drug"}
+        }
+      }
+    }
+  ]
+}
