@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67bd1047-d29f-4e49-b8da-f0203cf8347a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/ctrp_dataclinicaltrials_api.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+    <list default="true" id="67bd1047-d29f-4e49-b8da-f0203cf8347a" name="Default" comment="removing idea code">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
@@ -905,12 +901,20 @@
       <option name="presentableId" value="Default" />
       <updated>1487954935160</updated>
       <workItem from="1487954936318" duration="12881000" />
-      <workItem from="1488222291837" duration="429000" />
+      <workItem from="1488222291837" duration="638000" />
     </task>
+    <task id="LOCAL-00001" summary="removing idea code">
+      <created>1488222768527</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1488222768527</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13310000" />
+    <option name="totallyTimeSpent" value="13519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2386" y="457" width="1440" height="829" extended-state="0" />
@@ -944,6 +948,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="removing idea code" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing idea code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
