@@ -1,0 +1,38 @@
+common: &defaults
+  aws_region: 'us-east-1'
+  #table_prefix: ''
+  read_capacity_units: '10'
+  write_capacity_units: '10'
+
+development:
+  <<: *defaults
+  aws_dynamo_endpoint: 'http://localhost:8000'
+  #aws_dynamo_endpoint: 'https://dynamodb.us-east-1.amazonaws.com'
+#  aws_access_key_id: <%= ENV["AWS_ACCESS_KEY_ID"] %>
+#  aws_secret_access_key: <%= ENV["AWS_SECRET_ACCESS_KEY"] %>
+  #queue_name: <%= ENV['TA_QUEUE_NAME'] %>
+  #cog_url: 'http://localhost:3000'
+  #slack_channel: "#match-bot-dev"
+
+test:
+  <<: *defaults
+# aws_dynamo_endpoint: 'https://dynamodb.us-east-1.amazonaws.com'
+#  queue_name: 'treatment_arm_queue'
+#  cog_url: 'http://pedmatch-int.nci.nih.gov:3000'
+#  slack_channel: "#match-bot-int"
+
+uat:
+  <<: *defaults
+#  aws_dynamo_endpoint: 'https://dynamodb.us-east-1.amazonaws.com'
+#  queue_name: 'treatment_arm_queue'
+#  cog_url: 'https://qa-cogws.cogmembers.org/pmws'
+#  mock_cog_url: 'http://pedmatcrailsh-uat.nci.nih.gov:3000'
+#  cog_user_name: <%= ENV['COG_USERNAME'] %>
+#  cog_pwd: <%= ENV['COG_PWD'] %>
+#  slack_channel: "#match-bot-uat"
+
+production:
+  <<: *defaults
+#  aws_dynamo_endpoint: 'https://dynamodb.us-east-1.amazonaws.com'
+#  queue_name: 'treatment_arm_queue'
+#  cog_url: ''

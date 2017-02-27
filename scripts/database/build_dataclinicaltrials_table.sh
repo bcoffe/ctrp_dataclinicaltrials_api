@@ -49,7 +49,7 @@ echo -e "${RED}DELETING TABLE IF IT EXIST${NC}"
 echo -e "${CYAN}***********************************************${NC}"
 aws dynamodb delete-table --table-name $TABLE_NAME $END_POINT
 
-sleep 10
+sleep 2
 
 echo -e "${CYAN}***********************************************${NC}"
 echo -e "${RED}BUILDING TABLE${NC}"
@@ -61,7 +61,7 @@ echo -e "${CYAN}***********************************************${NC}"
 # aws dynamodb create-table --table-name $TABLE_NAME --attribute-definitions AttributeName=site,AttributeType=S AttributeName=molecular_id,AttributeType=S --key-schema AttributeName=site,KeyType=HASH AttributeName=molecular_id,KeyType=RANGE --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 $END_POINT
 aws dynamodb create-table --table-name $TABLE_NAME --attribute-definitions AttributeName=nci_id,AttributeType=S --key-schema AttributeName=nci_id,KeyType=HASH --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 $END_POINT
 
-sleep 10
+sleep 2
 
 echo -e "${CYAN}***********************************************${NC}"
 echo -e "${RED}WRITING SAMPLE DATA TO TABLE${NC}"
