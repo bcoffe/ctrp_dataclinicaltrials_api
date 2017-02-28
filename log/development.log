@@ -7767,3 +7767,11 @@ Processing by Api::V1::DataClinicalTrialsController#show as HTML
 Completed 200 OK in 12ms (Views: 0.4ms)
 
 
+Started GET "/api/v1/data_clinical_trials/NCI22222" for ::1 at 2017-02-27 22:37:04 -0500
+Processing by Api::V1::DataClinicalTrialsController#show as HTML
+  Parameters: {"id"=>"NCI22222"}
+[Aws::DynamoDB::Client 200 0.020601 0 retries] get_item(table_name:"data_clinical_trial",key:{"nci_id"=>{s:"NCI22222"}})  
+
+Completed 200 OK in 162ms (Views: 0.4ms)
+
+
