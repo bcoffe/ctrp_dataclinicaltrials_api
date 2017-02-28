@@ -34,8 +34,7 @@ module Api::V1
     # POST /data_clinical_trails.json
     def create
         begin
-          #byebug
-          data_clinical_trail = DataClinicalTrial.new
+           data_clinical_trail = DataClinicalTrial.new
           json = JSON.parse(request.raw_post)
           json.deep_transform_keys!(&:underscore).symbolize_keys!
           DataClinicalTrial.format_data(data_clinical_trail, json)
@@ -52,7 +51,7 @@ module Api::V1
     #   if @data_clinical_trail.update(data_clinical_trail_params)
     #     render :show, status: :ok, location: @data_clinical_trail
     #   else
-    #     render json: @data_clinical_trail.errors, status: :unprocessable_entity
+    #     render json: @data_clinical_trail.errors, status: :unprocessable_etity
     #   end
     # end
     #
