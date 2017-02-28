@@ -98,6 +98,24 @@ RSpec.describe DataClinicalTrailsController, type: :controller do
         expect(response).to render_template("new")
       end
     end
+
+    # it 'should try to insert a new TreatmentArm' do
+    #   allow(TreatmentArm).to receive(:new).and_return(treatment_arm)
+    #   allow(treatment_arm).to receive(:save).and_return(true)
+    #   expect(subject.insert(treatment_arm.to_h)).to be_truthy
+    # end
+    #
+    # it 'should insert a new version of the TreatmentArm' do
+    #   allow(TreatmentArm).to receive(:scan).and_return(treatment_arm)
+    #   allow(treatment_arm).to receive(:save).and_return(true)
+    #   expect{ (subject.insert_new_version(new_treatment_arm_hash, treatment_arm)) }.to_not raise_error
+    # end
+    #
+    # it 'should try to insert a new TreatmentArm' do
+    #   allow(TreatmentArm).to receive(:new).and_return(treatment_arm)
+    #   allow(treatment_arm).to receive(:save).and_raise('Unable to save')
+    #   expect(subject.insert(treatment_arm.to_h)).to be_truthy
+    # end
   end
 
   describe "PUT #update" do
