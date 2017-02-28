@@ -22,17 +22,13 @@ class DataClinicalTrial
   string_attr :model_description
   string_attr :gender_based
 
-  def self.find_by(nci_id = nil,to_hash = true)
+  def self.find_all(nci_id = nil,to_hash = true)
     query = {}
     query.merge!(build_scan_filter(nci_id))
     query[:conditional_operator] = 'AND' if query[:scan_filter].length >= 4
-    puts "I am in find by"
-    puts scan(query)
     if to_hash
-      puts "into hash"
       scan(query).collect(&:to_h)
     else
-      puts "into else block "
       scan(query).entries
     end
   end
@@ -48,6 +44,22 @@ class DataClinicalTrial
       item = response.item
   end
 
+  def self.format_data(hash, sample)
+    hash.nci_id = sample[:nci_id]
+    hash.exported_from_us = sample[:exported_from_us]
+    hash.gender_description = sample[:model_description]
+    hash.sequential_assignment = sample[:sequential_assignment]
+    hash.fda_regulated_drug = sample[:fda_regulated_drug]
+    hash.post_prior_to_approval = sample[:post_prior_to_approval]
+    hash.ped_postmarket_surv = sample[:ped_postmarket_surv]
+    hash.masking_description = sample[:masking_description]
+    hash.fda_regulated_device = sample[:fda_regulated_device]
+    hash.model_description = sample[:model_description]
+    hash.gender_based = sample[:model_description]
+    hash
+  end
+
+
   def self.build_scan_filter(nci_id)
     puts "Inside build"
     query = { scan_filter: {} }
@@ -56,38 +68,5 @@ class DataClinicalTrial
     end
     query
   end
-
-    # def self.from_json(string)
-    #   data = JSON.load string
-    #   created = self.new
-    #
-    #   created.id = data['id']
-    #   created.patient_id = data['patient_id']
-    #   created.molecular_id = data['molecular_id']
-    #   created.analysis_id = data['analysis_id']
-    #   created.type = data['type']
-    #   created.status = data['status']
-    #   created.comment = data['comment']
-    #   created.comment_user = data['comment_user']
-    #
-    #   return created
-    # end
-
-  # def attributes_data
-  #   attributes.as_json['data']['data']
-  # end
-  #
-  # def self.serialized_hash(data_clinical_trials, projection = [])
-  #   return [] unless data_clinical_trials.present?
-  #   if data_clinical_trials.is_a?(Array)
-  #     attributes = data_clinical_trials.first.attributes_data.keys
-  #     unwanted_attributes = projection.blank? ? [] : attributes - projection
-  #     data_clinical_trials.collect { |t| t.attributes_data.delete_keys!(unwanted_attributes) }
-  #   elsif data_clinical_trials.is_a?(DataClinicalTrial)
-  #     attributes = data_clinical_trials.attributes_data.keys
-  #     unwanted_attributes = attributes - projection
-  #     data_clinical_trials.attributes_data.delete_keys!(unwanted_attributes)
-  #   end
-  # end
 
 end

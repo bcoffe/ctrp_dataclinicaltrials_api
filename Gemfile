@@ -34,7 +34,7 @@ gem 'aws-sdk'
 gem 'aws-record', '~> 1.0'
 gem 'aws-sdk-resources', '~> 2.5'
 gem 'aws-sdk-rails', '1.0.1'
-
+gem 'httparty', '0.14.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
