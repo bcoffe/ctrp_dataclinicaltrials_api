@@ -4,10 +4,11 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+
+# Ignore all logfiles and tempfiles.
 .idea/*
 GemFile.lock
 .byebug_history
-# Ignore all logfiles and tempfiles.
 /tmp
 /log/*
 !/log/.keep
